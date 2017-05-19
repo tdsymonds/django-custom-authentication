@@ -1,0 +1,8 @@
+{% load widget_tweaks %}
+
+<div class="form-group has-feedback">
+    {{ form.username.errors }}
+    <label for="{{ form.username.id_for_label }}" class="sr-only">{{ form.label }}</label>
+    {{ form.username|add_class:"form-control"|attr:"type:email"|attr:"placeholder:Email" }}
+    <i class="fa fa-user form-control-feedback"></i>
+</div>

@@ -1,0 +1,8 @@
+{% extends 'authentication/pages/base.html' %}
+
+{% block content %}
+    <form class="form-login" method="post" action=".">
+        {% csrf_token %}
+        {% block form %}{% endblock %}
+    </form>
+{% endblock %}

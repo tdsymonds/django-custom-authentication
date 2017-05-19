@@ -1,0 +1,39 @@
+{% extends 'authentication/pages/_form_base.html' %}
+{% load widget_tweaks staticfiles %}
+
+{% block title %}Welcome | Please login{% endblock %}
+
+{% block formheading %}Please sign in{% endblock %}
+
+{% block form %}
+    <div class="row">
+        <div class="col-xs-12">
+            {% if form.errors %}
+                <p class="error">There was a problem with your credentials, please try again.</p>
+            {% endif %}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            {% include 'authentication/reusable/_username_input.html' %}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            {% include 'authentication/reusable/_password_input.html' %}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <input type="hidden" name="next" value="{{ next }}" />
+            <input class="btn signin" type="submit" value="Sign in" />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="forgot-password-container">
+                <a class="forgot-password" href="{% url 'authentication:password_reset' %}">Forgot your password?</a>
+            </div>
+        </div>
+    </div>
+{% endblock %}

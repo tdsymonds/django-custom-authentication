@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,600');
+
+html, body{
+    background: #f8f8f8;
+    font-family: 'Raleway', sans-serif;
+}
+
+.wrap{
+    padding-top: 100px;
+}
+
+
+.form-container{
+    background:#fff;
+    border: 1px solid #eee;
+    border-radius:4px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.form-container .heading{
+    background:#417690;
+    color:#fff;
+    padding:15px;
+    border-top-left-radius:4px;
+    border-top-right-radius:4px;
+    margin-bottom:15px;
+}
+
+.form-container .heading h1{
+    margin:0;
+    font-size:20px;
+}
+
+.form-login{
+    padding:15px;
+}
+
+.form-control {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    height: 40px;
+    margin-bottom:25px;
+}
+.has-feedback label.sr-only~.form-control-feedback{
+    top:12px;
+    color:#417690
+}
+
+.signin{
+    background: #79aec8;
+    color:#fff;
+    padding: 8px 25px;
+}
+
+.signin:active,
+.signin:focus, 
+.signin:hover{
+    background: #417690;
+    color: #fff;
+}
+
+.forgot-password-container{
+    text-align:right;
+}
+
+a.forgot-password{
+    color:#417690;   
+}
+
+.error{
+    color:#cc0000;
+}
+
+.message-container{
+    padding:15px;
+}
+
+.message-container .signin{
+    margin-top: 15px;
+}
